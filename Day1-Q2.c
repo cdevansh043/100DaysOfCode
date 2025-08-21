@@ -1,7 +1,5 @@
 //Q2: Write a program to input two numbers and display their sum, difference, product, and quotient.
 
-//Q1: Write a program to input two numbers and display their sum.
-
 #include <stdio.h>
 
 int main() {
