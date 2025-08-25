@@ -23,7 +23,7 @@ int main() {
     scanf ("%lf %lf %lf", &principal, &rate , &time);
     simple_interest = (principal * rate * time)/100;
     compound_interest = (principal * pow((1 + rate/100),time)) - principal;
-    printf("Simple Interest = %.2lf, Compound Interest = %.2lf",simple_interest,compound_interest);
+    printf("Simple Interest = %lf, Compound Interest = %.2lf",simple_interest,compound_interest);
 
     return 0;
 }
