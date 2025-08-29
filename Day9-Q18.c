@@ -8,17 +8,17 @@ int main() {
     int marks;
     scanf("%d", &marks);
     if (marks >= 90) {
-        printf("A\n");
+        printf("Grade A\n");
     } else if (marks >= 80 ) {
-        printf("B\n");
+        printf("Grade B\n");
     } else if (marks >= 70 ) {
-        printf("C\n");
+        printf("Grade C\n");
     } else if (marks >= 60 ) {
-        printf("D\n");
+        printf("Grade D\n");
     } else if (marks > 50 ) {
-        printf("E\n");
+        printf("Grade E\n");
     } else {
-        printf("F\n");
+        printf("Grade F\n");
     }
     return 0;
 }
