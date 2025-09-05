@@ -20,7 +20,6 @@ int main() {
     int n;
     scanf("%d",&n);
     int binary=0, place=1;
-    int original=n;
     if (n==0) {
         printf("0");
         return 0;
