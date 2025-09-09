@@ -3,10 +3,7 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    int place = 1;
-    int binary = 0;
-    int digit_count = 0;
+    int n,place = 1,binary = 0,digit_count = 0;
     scanf("%d",&n);
 
     if (n == 0) {
