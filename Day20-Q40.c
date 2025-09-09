@@ -19,7 +19,6 @@ int main() {
         }
     }
 
-
     if (n == 0) {
         printf("0");
         return 0;
