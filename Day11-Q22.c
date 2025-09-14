@@ -6,7 +6,9 @@
 int main() {
     int cp,sp;
     int loss, profit;
+    
     scanf("%d %d",&cp,&sp);
+    
     if (cp > sp ) {
         loss = ((cp - sp) * 100) / cp;
         printf("Loss %d%%", loss);
