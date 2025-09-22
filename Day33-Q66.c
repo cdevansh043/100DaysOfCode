@@ -13,7 +13,7 @@ Output 1:
 
 #include <stdio.h>
 
-void addElement(int arr[] , int n, int key) {
+void addElement(int arr[], int n, int key) {
     int pos = 0;
     for (int i = 0; i < n; i++) {
         if (arr[i] > key) {
@@ -36,17 +36,16 @@ void printArray(int arr[], int n) {
 }
 
 
-
 int main() {
     int n;
     scanf("%d", &n);
-    int arr[n+1];
+    int arr[n + 1];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
     int key;
     scanf("%d", &key);
     addElement(arr, n, key);
-    printArray(arr, n+1);
+    printArray(arr, n + 1);
     return 0;
 }
