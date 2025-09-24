@@ -15,16 +15,34 @@ Output 1:
 int main() {
     int n;
     scanf("%d", &n);
+
+    if (n < 2) {
+        printf("Need at least 2 elements to find second maximum.\n");
+        return 1;
+    }
     int arr[n];
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    int max = arr[0];
-    int secondMax = arr[0];
+
+
+    int min = arr[0];
+    for (int i = 0; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+
+    int max = min;
+    int secondMax = min;
+
     for (int i = 0; i < n; i++) {
         if (arr[i] > max) {
             secondMax = max;
             max = arr[i];
+        } else if (arr[i] > secondMax && arr[i] < max) {
+            secondMax = arr[i];
         }
     }
     printf("Second Max: %d\n", secondMax);
