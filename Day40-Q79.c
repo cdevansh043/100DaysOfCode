@@ -39,13 +39,26 @@ void diagonal_transversal(int rows, int cols, int matrix[rows][cols], int arr[ro
     int index = 0;
     for (int i = 1; i <= diagonals; i++) {
         int startCol = max(0, i - rows);
-        int count = min(i, cols - startCol,rows);
+        int count = min(i, cols - startCol, rows);
+
+        int temp[count];
         for (int j = 0; j < count; j++) {
-            int n = MIN(rows, i) - j - 1; //rows
-            int m = startCol + j; //cols
-            arr[index++] = matrix[n][m];
+            int n = MIN(rows, i) - j - 1; // row
+            int m = startCol + j;         // col
+            temp[j] = matrix[n][m];
+        }
+
+        if (i % 2 == 1) {
+            for (int j = 0; j < count; j++) {
+                arr[index++] = temp[j];
+            }
+        } else {
+            for (int j = count - 1; j >= 0; j--) {
+                arr[index++] = temp[j];
+            }
         }
     }
+
 }
 
 void printArray(int arr[], int size) {
