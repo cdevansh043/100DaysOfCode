@@ -33,6 +33,7 @@ int main() {
     }
 
     int alphabet[26] = {0};
+
     for (int i = 0; i < len1; i++) {
         if (str1[i] >= 'a' && str1[i] <= 'z') {
             alphabet[str1[i] - 'a']++;
