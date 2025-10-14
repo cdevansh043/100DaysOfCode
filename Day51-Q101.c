@@ -29,7 +29,6 @@ int findFirstOccurrence(int nums[], int n, int target) {
         if (nums[mid] == target) {
             result = mid;
             high = mid - 1;
-
         } else if (nums[mid] < target) {
             low = mid + 1;
         }else {
