@@ -1,1 +1,1 @@
-just trying 100 Days Of Code 😜
+Just trying 100 Days Of Code 😜
