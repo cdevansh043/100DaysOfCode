@@ -17,7 +17,7 @@ Output 2:
 #include <stdio.h>
 #include <stdlib.h>
 
-int *productOthers(int nums[], int numsSize, int *returnSize) {
+int *productOthers(int* nums, int numsSize, int *returnSize) {
     *returnSize = numsSize;
     int *ans = (int *) malloc(sizeof(int) * (*returnSize));
 
