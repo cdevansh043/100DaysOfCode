@@ -19,7 +19,7 @@ Output 2:
 
 int *productOthers(int* nums, int numsSize, int *returnSize) {
     *returnSize = numsSize;
-    int *ans = (int *) malloc(sizeof(int) * (*returnSize));
+    int *ans = (int*) malloc(sizeof(int) * (*returnSize));
 
     ans[0] = 1;
     for (int i = 1; i < numsSize; i++) {
