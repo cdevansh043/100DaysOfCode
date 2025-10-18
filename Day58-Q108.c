@@ -45,10 +45,10 @@ int main() {
 
     int returnSize;
     int *ans = productOthers(nums, numsSize, &returnSize);
-    for (int i = 0; i < numsSize; i++) {
+    for (int i = 0; i < returnSize; i++) {
         if (i == 0) {
             printf("[%d,", ans[i]);
-        } else if (i == numsSize - 1) {
+        } else if (i == returnSize - 1) {
             printf(" %d]", ans[i]);
         } else {
             printf(" %d,", ans[i]);
