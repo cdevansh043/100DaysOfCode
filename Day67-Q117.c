@@ -57,6 +57,7 @@ int main() {
     for (int i = 0; i < returnSize; i++) {
         printf("%d ", ans[i]);
     }
+
     free(ans);
     return 0;
 }
